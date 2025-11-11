@@ -4,13 +4,18 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class EmptyArrayException extends Exception{
-  static final Logger log = LogManager.getLogger();
   public EmptyArrayException() {
   }
 
   public EmptyArrayException(String message) {
     super(message);
-    log.error(message);
   }
 
+  public EmptyArrayException(String message, Throwable cause) {
+    super(message, cause);
+  }
+
+  public EmptyArrayException(Throwable cause) {
+    super(cause);
+  }
 }
