@@ -1,0 +1,9 @@
+package com.polyakov.task1.service;
+
+import com.polyakov.task1.entity.MyArray;
+import com.polyakov.task1.exception.EmptyArrayException;
+
+public interface MinMaxValueService {
+    int findMaxValue(MyArray myArray) throws EmptyArrayException;
+    int findMinValue(MyArray myArray) throws EmptyArrayException;
+}

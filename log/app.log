@@ -1,0 +1,28 @@
+2025-11-11 13:04:06 INFO  MyArray - array com.polyakov.task1.entity.MyArray@1c3e882 was created
+2025-11-11 13:04:07 INFO  AverageValueServiceImplTest - findAverageValue() started
+2025-11-11 13:04:07 INFO  AverageValueService - Average array value counted: 3.0
+2025-11-11 13:04:07 INFO  AverageValueServiceImplTest - findAverageValue() ended
+2025-11-11 13:05:17 INFO  MyArray - array com.polyakov.task1.entity.MyArray@1c3e882 was created
+2025-11-11 13:05:18 INFO  MinMaxValueServiceImplTest - findMaxValue() started
+2025-11-11 13:05:18 INFO  MinMaxValueService - Max array value was found: 5
+2025-11-11 13:05:18 INFO  MinMaxValueServiceImplTest - findMaxValue() ended
+2025-11-11 13:05:52 INFO  MyArray - array com.polyakov.task1.entity.MyArray@1c3e882 was created
+2025-11-11 13:05:53 INFO  MinMaxValueServiceImplTest - findMinValue() started
+2025-11-11 13:05:53 INFO  MinMaxValueService - Min array value was found: 1
+2025-11-11 13:05:53 INFO  MinMaxValueServiceImplTest - findMinValue() ended
+2025-11-11 13:06:05 INFO  MyArray - array com.polyakov.task1.entity.MyArray@1c3e882 was created
+2025-11-11 13:06:05 INFO  PositiveNegativeCountServiceImplTest - positiveCount() started
+2025-11-11 13:06:05 INFO  PositiveNegativeCountService - Positive array elements were counted: 5
+2025-11-11 13:06:06 INFO  PositiveNegativeCountServiceImplTest - positiveCount() ended
+2025-11-11 13:06:13 INFO  MyArray - array com.polyakov.task1.entity.MyArray@1c3e882 was created
+2025-11-11 13:06:13 INFO  PositiveNegativeCountServiceImplTest - negativeCount() started
+2025-11-11 13:06:13 INFO  PositiveNegativeCountService - Negative array elements were counted: 0
+2025-11-11 13:06:13 INFO  PositiveNegativeCountServiceImplTest - negativeCount() ended
+2025-11-11 13:06:26 INFO  MyArray - array com.polyakov.task1.entity.MyArray@189adbf was created
+2025-11-11 13:06:26 INFO  ReplaceElementsByConditionServiceImplTest - replace() started
+2025-11-11 13:06:26 INFO  ReplaceElementsByConditionService - Array elements were replaced
+2025-11-11 13:06:26 INFO  ReplaceElementsByConditionServiceImplTest - replace() ended
+2025-11-11 13:06:40 INFO  MyArray - array com.polyakov.task1.entity.MyArray@1c3e882 was created
+2025-11-11 13:06:41 INFO  SumServiceImplTest - sum() started
+2025-11-11 13:06:41 INFO  SumService - Array elements sum was counted: 15
+2025-11-11 13:06:41 INFO  SumServiceImplTest - sum() ended
