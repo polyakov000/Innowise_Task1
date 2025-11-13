@@ -1,0 +1,110 @@
+2025-11-12 18:39:43 [main] INFO  com.polyakov.task1.entity.CustomArray- array com.polyakov.task1.entity.CustomArray@1d19324 was created
+2025-11-12 18:39:43 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- insertionSort() started
+2025-11-12 18:39:43 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by insertionSort
+2025-11-12 18:39:44 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- insertionSort() ended
+2025-11-12 18:39:44 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- bubbleSort() started
+2025-11-12 18:39:44 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by bubbleSort
+2025-11-12 18:39:44 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- bubbleSort() ended
+2025-11-12 18:39:44 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- selectionSort() started
+2025-11-12 18:39:44 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by selectionSort
+2025-11-12 18:39:44 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- selectionSort() ended
+2025-11-12 18:42:37 [main] INFO  com.polyakov.task1.entity.CustomArray- array com.polyakov.task1.entity.CustomArray@1d19324 was created
+2025-11-12 18:42:37 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- insertionSort() started
+2025-11-12 18:42:37 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by insertionSort
+2025-11-12 18:42:37 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- insertionSort() ended
+2025-11-12 18:42:37 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- bubbleSort() started
+2025-11-12 18:42:37 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by bubbleSort
+2025-11-12 18:42:37 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- bubbleSort() ended
+2025-11-12 18:42:37 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- selectionSort() started
+2025-11-12 18:42:37 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by selectionSort
+2025-11-12 18:42:37 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImplTest- selectionSort() ended
+2025-11-12 18:47:09 [main] INFO  polyakov.task1.reader.impl.CustomFileReaderImpl- File successfully read
+2025-11-12 20:42:30 [main] INFO  polyakov.task1.reader.impl.CustomFileReaderImpl- File successfully read
+2025-11-12 20:42:50 [main] INFO  polyakov.task1.reader.impl.CustomFileReaderImpl- File successfully read
+2025-11-12 20:43:24 [main] INFO  polyakov.task1.reader.impl.CustomFileReaderImpl- File successfully read
+2025-11-12 20:49:56 [main] INFO  polyakov.task1.reader.impl.CustomFileReaderImpl- File successfully read
+2025-11-13 16:51:14 [main] INFO  com.polyakov.task1.entity.CustomArray- array com.polyakov.task1.entity.CustomArray@1d19324 was created
+2025-11-13 16:51:14 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- streamSort() started
+2025-11-13 16:51:15 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- streamSort() ended
+2025-11-13 16:53:14 [main] INFO  com.polyakov.task1.entity.CustomArray- array com.polyakov.task1.entity.CustomArray@1d19324 was created
+2025-11-13 16:53:15 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- streamSort() started
+2025-11-13 16:53:15 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- streamSort() ended
+2025-11-13 16:53:25 [main] INFO  com.polyakov.task1.entity.CustomArray- array com.polyakov.task1.entity.CustomArray@1d19324 was created
+2025-11-13 16:53:25 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- streamSort() started
+2025-11-13 16:53:25 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- streamSort() ended
+2025-11-13 16:53:25 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- insertionSort() started
+2025-11-13 16:53:25 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by insertionSort
+2025-11-13 16:53:25 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- insertionSort() ended
+2025-11-13 16:53:25 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- bubbleSort() started
+2025-11-13 16:53:25 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by bubbleSort
+2025-11-13 16:53:25 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- bubbleSort() ended
+2025-11-13 16:53:25 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- selectionSort() started
+2025-11-13 16:53:25 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by selectionSort
+2025-11-13 16:53:25 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- selectionSort() ended
+2025-11-13 16:53:45 [main] INFO  com.polyakov.task1.entity.CustomArray- array com.polyakov.task1.entity.CustomArray@1d19324 was created
+2025-11-13 16:53:45 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- streamSort() started
+2025-11-13 16:53:45 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- streamSort() ended
+2025-11-13 16:53:45 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- insertionSort() started
+2025-11-13 16:53:45 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by insertionSort
+2025-11-13 16:53:45 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- insertionSort() ended
+2025-11-13 16:53:45 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- bubbleSort() started
+2025-11-13 16:53:45 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by bubbleSort
+2025-11-13 16:53:45 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- bubbleSort() ended
+2025-11-13 16:53:45 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- selectionSort() started
+2025-11-13 16:53:45 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by selectionSort
+2025-11-13 16:53:45 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- selectionSort() ended
+2025-11-13 16:54:20 [main] INFO  com.polyakov.task1.entity.CustomArray- array com.polyakov.task1.entity.CustomArray@1d19324 was created
+2025-11-13 16:54:20 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- streamSort() started
+2025-11-13 16:54:20 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- streamSort() ended
+2025-11-13 16:54:20 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- insertionSort() started
+2025-11-13 16:54:20 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by insertionSort
+2025-11-13 16:54:20 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- insertionSort() ended
+2025-11-13 16:54:20 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- bubbleSort() started
+2025-11-13 16:54:20 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by bubbleSort
+2025-11-13 16:54:20 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- bubbleSort() ended
+2025-11-13 16:54:20 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- selectionSort() started
+2025-11-13 16:54:20 [main] INFO  polyakov.task1.service.impl.ArraySortServiceImpl- com.polyakov.task1.entity.CustomArray@1c3e882 was sorted by selectionSort
+2025-11-13 16:54:20 [main] INFO  com.polyakov.task1.service.ArraySortServiceImplTest- selectionSort() ended
+2025-11-13 17:07:30 [main] INFO  com.polyakov.task1.entity.CustomArray- array com.polyakov.task1.entity.CustomArray@189adbf was created
+2025-11-13 17:07:32 [main] INFO  com.polyakov.task1.service.ReplaceElementsByConditionServiceImplTest- replaceStream() started
+2025-11-13 17:07:32 [main] INFO  polyakov.task1.service.impl.ReplaceElementsByConditionServiceImpl- Array elements were replaced using StreamAPI
+2025-11-13 17:07:32 [main] INFO  com.polyakov.task1.service.ReplaceElementsByConditionServiceImplTest- replaceStream() ended
+2025-11-13 17:09:20 [main] INFO  com.polyakov.task1.entity.CustomArray- array com.polyakov.task1.entity.CustomArray@189adbf was created
+2025-11-13 17:09:21 [main] INFO  com.polyakov.task1.service.ReplaceElementsByConditionServiceImplTest- replaceStream() started
+2025-11-13 17:09:21 [main] INFO  polyakov.task1.service.impl.ReplaceElementsByConditionServiceImpl- Array elements were replaced using StreamAPI
+2025-11-13 17:09:22 [main] INFO  com.polyakov.task1.service.ReplaceElementsByConditionServiceImplTest- replaceStream() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.entity.CustomArray- array com.polyakov.task1.entity.CustomArray@1c3e882 was created
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findMinValueStream() started
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findMinValueStream() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- positiveCount() started
+2025-11-13 17:31:05 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Positive array elements were counted: 5
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- positiveCount() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findMinValue() started
+2025-11-13 17:31:05 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Min array value was found: 1
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findMinValue() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- negativeCount() started
+2025-11-13 17:31:05 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Negative array elements were counted: 0
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- negativeCount() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- sum() started
+2025-11-13 17:31:05 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Array elements sum was counted: 15
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- sum() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- negativeCountStream() started
+2025-11-13 17:31:05 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Negative array elements were counted: 0
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- negativeCountStream() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findMaxValue() started
+2025-11-13 17:31:05 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Max array value was found: 5
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findMaxValue() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- positiveCountStream() started
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- positiveCountStream() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- sumStream() started
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- sumStream() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findAverageValue() started
+2025-11-13 17:31:05 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Average array value counted: 3.0
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findAverageValue() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findAverageValueStream() started
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findAverageValueStream() ended
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findMaxValueStream() started
+2025-11-13 17:31:05 [main] INFO  com.polyakov.task1.service.ArrayOperationsServiceImplTest- findMaxValueStream() ended
+2025-11-13 19:09:40 [main] INFO  com.polyakov.task1.reader.CustomFileReaderImplTest- readFile() started
+2025-11-13 19:09:40 [main] INFO  polyakov.task1.reader.impl.CustomFileReaderImpl- File successfully read
+2025-11-13 19:09:40 [main] INFO  com.polyakov.task1.reader.CustomFileReaderImplTest- readFile() ended

@@ -1,8 +1,9 @@
 package com.polyakov.task1.service;
 
-import com.polyakov.task1.entity.MyArray;
-import com.polyakov.task1.exception.EmptyArrayException;
+import com.polyakov.task1.entity.CustomArray;
+import com.polyakov.task1.exception.CustomArrayException;
 
 public interface ReplaceElementsByConditionService {
-  MyArray replace(MyArray myArray) throws EmptyArrayException;
+  CustomArray replace(CustomArray customArray) throws CustomArrayException;
+  CustomArray replaceStream(CustomArray customArray) throws CustomArrayException;
 }

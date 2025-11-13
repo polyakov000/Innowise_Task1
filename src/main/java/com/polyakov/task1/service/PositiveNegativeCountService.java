@@ -1,9 +1,0 @@
-package com.polyakov.task1.service;
-
-import com.polyakov.task1.entity.MyArray;
-import com.polyakov.task1.exception.EmptyArrayException;
-
-public interface PositiveNegativeCountService {
-    int positiveCount(MyArray myArray) throws EmptyArrayException;
-    int negativeCount(MyArray myArray) throws EmptyArrayException;
-}

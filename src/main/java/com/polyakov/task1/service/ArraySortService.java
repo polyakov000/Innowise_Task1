@@ -1,10 +1,12 @@
 package com.polyakov.task1.service;
 
-import com.polyakov.task1.entity.MyArray;
-import com.polyakov.task1.exception.EmptyArrayException;
+import com.polyakov.task1.entity.CustomArray;
+import com.polyakov.task1.exception.CustomArrayException;
 
 public interface ArraySortService {
-  MyArray quickSort(MyArray myArray) throws EmptyArrayException;
-  MyArray bubbleSort(MyArray myArray) throws EmptyArrayException;
+  CustomArray selectionSort(CustomArray customArray) throws CustomArrayException;
+  CustomArray bubbleSort(CustomArray customArray) throws CustomArrayException;
+  CustomArray insertionSort(CustomArray customArray) throws CustomArrayException;
+  CustomArray streamSort(CustomArray customArray) throws  CustomArrayException;
 
 }
