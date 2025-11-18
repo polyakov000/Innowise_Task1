@@ -11,7 +11,7 @@ import java.util.Optional;
 
 public class ArrayCalculationsServiceImpl implements ArrayCalculationsService {
   static final Logger log = LogManager.getLogger();
-  public double findAverageValue(CustomArray customArray) throws CustomArrayException {
+  public double calculateAverageValue(CustomArray customArray) throws CustomArrayException {
     if(customArray == null || customArray.getLength() == 0){
       throw new CustomArrayException("Empty or not initialized array");
     }
@@ -25,7 +25,7 @@ public class ArrayCalculationsServiceImpl implements ArrayCalculationsService {
   }
 
   @Override
-  public double findAverageValueStream(CustomArray customArray) throws CustomArrayException {
+  public double calculateAverageValueStream(CustomArray customArray) throws CustomArrayException {
     if(customArray == null || customArray.getLength() == 0){
       throw new CustomArrayException("Empty or not initialized array");
     }
