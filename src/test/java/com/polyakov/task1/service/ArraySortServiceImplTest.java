@@ -32,32 +32,32 @@ class ArraySortServiceImplTest {
 
   @Test
   void selectionSort() throws CustomArrayException {
-    CustomArray sortedArray = arraySortService.selectionSort(CUSTOM_ARRAY);
+    arraySortService.selectionSort(CUSTOM_ARRAY);
     int[] expected = {1,2,3,4,5};
-    int[] actual = sortedArray.getElements();
+    int[] actual = CUSTOM_ARRAY.getElements();
     assertArrayEquals(expected,actual);
   }
 
   @Test
   void bubbleSort() throws CustomArrayException {
-    CustomArray sortedArray = arraySortService.bubbleSort(CUSTOM_ARRAY);
+    arraySortService.bubbleSort(CUSTOM_ARRAY);
     int[] expected = {1,2,3,4,5};
-    int[] actual = sortedArray.getElements();
+    int[] actual = CUSTOM_ARRAY.getElements();
     assertArrayEquals(expected,actual);
   }
 
   @Test
   void insertionSort() throws CustomArrayException {
-    CustomArray sortedArray = arraySortService.insertionSort(CUSTOM_ARRAY);
+    arraySortService.insertionSort(CUSTOM_ARRAY);
     int[] expected = {1,2,3,4,5};
-    int[] actual = sortedArray.getElements();
+    int[] actual = CUSTOM_ARRAY.getElements();
     assertArrayEquals(expected,actual);
   }
   @Test
   void streamSort() throws CustomArrayException {
-    CustomArray sortedArray = arraySortService.streamSort(CUSTOM_ARRAY);
+    arraySortService.streamSort(CUSTOM_ARRAY);
     int[] expected = {1,2,3,4,5};
-    int[] actual = sortedArray.getElements();
+    int[] actual = CUSTOM_ARRAY.getElements();
     assertArrayEquals(expected,actual);
   }
 }

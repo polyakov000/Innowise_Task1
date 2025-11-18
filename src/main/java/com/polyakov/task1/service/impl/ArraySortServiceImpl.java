@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 public class ArraySortServiceImpl implements ArraySortService {
   static final Logger log = LogManager.getLogger();
   @Override
-  public CustomArray selectionSort(CustomArray customArray) throws CustomArrayException {
+  public void selectionSort(CustomArray customArray) throws CustomArrayException {
     if(customArray == null || customArray.getLength() == 0){
       throw new CustomArrayException("Empty or not initialized array");
     }
@@ -31,11 +31,10 @@ public class ArraySortServiceImpl implements ArraySortService {
       customArray.getElements()[i] = min;
     }
     log.info("{} was sorted by selectionSort", customArray);
-    return customArray;
   }
 
   @Override
-  public CustomArray bubbleSort(CustomArray customArray) throws CustomArrayException {
+  public void bubbleSort(CustomArray customArray) throws CustomArrayException {
     if(customArray == null || customArray.getLength() == 0){
       throw new CustomArrayException("Empty or not initialized array");
     }
@@ -49,11 +48,10 @@ public class ArraySortServiceImpl implements ArraySortService {
       }
     }
     log.info("{} was sorted by bubbleSort", customArray);
-    return customArray;
   }
 
   @Override
-  public CustomArray insertionSort(CustomArray customArray) throws CustomArrayException {
+  public void insertionSort(CustomArray customArray) throws CustomArrayException {
     if(customArray == null || customArray.getLength() == 0){
       throw new CustomArrayException("Empty or not initialized array");
     }
@@ -66,11 +64,10 @@ public class ArraySortServiceImpl implements ArraySortService {
       customArray.getElements()[j] = swap;
     }
     log.info("{} was sorted by insertionSort", customArray);
-    return customArray;
   }
 
   @Override
-  public CustomArray streamSort(CustomArray customArray) throws CustomArrayException {
+  public void streamSort(CustomArray customArray) throws CustomArrayException {
     if(customArray == null || customArray.getLength() == 0){
       throw new CustomArrayException("Empty or not initialized array");
     }
@@ -79,6 +76,5 @@ public class ArraySortServiceImpl implements ArraySortService {
             .toArray();
     customArray.setElements(sortedElements);
     log.info("{} was sorted by streamSort", customArray);
-    return customArray;
   }
 }

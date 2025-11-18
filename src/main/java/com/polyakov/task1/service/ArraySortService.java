@@ -4,9 +4,9 @@ import com.polyakov.task1.entity.CustomArray;
 import com.polyakov.task1.exception.CustomArrayException;
 
 public interface ArraySortService {
-  CustomArray selectionSort(CustomArray customArray) throws CustomArrayException;
-  CustomArray bubbleSort(CustomArray customArray) throws CustomArrayException;
-  CustomArray insertionSort(CustomArray customArray) throws CustomArrayException;
-  CustomArray streamSort(CustomArray customArray) throws  CustomArrayException;
+  void selectionSort(CustomArray customArray) throws CustomArrayException;
+  void bubbleSort(CustomArray customArray) throws CustomArrayException;
+  void insertionSort(CustomArray customArray) throws CustomArrayException;
+  void streamSort(CustomArray customArray) throws  CustomArrayException;
 
 }
