@@ -12,7 +12,7 @@ target/
 *.iws
 *.iml
 *.ipr
-.logs/
+logs/
 src/test/java/com/polyakov/task1/myTest
 
 ### Eclipse ###

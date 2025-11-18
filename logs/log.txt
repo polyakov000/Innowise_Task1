@@ -359,3 +359,10 @@ elements = { [1, 2] }
 2025-11-18 18:23:03 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 3
 elements = { [3, 2, 3] }
 } was created
+2025-11-18 19:13:53 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4, 5] }
+} was created
+2025-11-18 19:13:53 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 15
+2025-11-18 19:13:53 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted using StreamAPI: 15
+2025-11-18 19:13:53 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted: 3.0
+2025-11-18 19:13:53 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted using StreamAPI: 3.0
