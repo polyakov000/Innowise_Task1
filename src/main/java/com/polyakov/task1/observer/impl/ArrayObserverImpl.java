@@ -1,6 +1,8 @@
 package com.polyakov.task1.observer.impl;
 
 import com.polyakov.task1.entity.CustomArray;
+import com.polyakov.task1.service.ArrayCalculationsService;
+import com.polyakov.task1.service.impl.ArrayCalculationsServiceImpl;
 import com.polyakov.task1.stats.ArrayStats;
 import com.polyakov.task1.exception.CustomArrayException;
 import com.polyakov.task1.observer.ArrayObserver;
@@ -15,13 +17,14 @@ public class ArrayObserverImpl implements ArrayObserver {
   @Override
   public void update(CustomArray customArray) {
     final ArrayOperationsService arrayOperationsService = new ArrayOperationsServiceImpl();
+    final ArrayCalculationsService arrayCalculationsService = new ArrayCalculationsServiceImpl();
     ArrayStats arrayStats =  ArrayStats.build().build();
     try {
       arrayStats = ArrayStats.build()
               .max(arrayOperationsService.findMaxValue(customArray))
               .min(arrayOperationsService.findMinValue(customArray))
-              .sum(arrayOperationsService.sum(customArray))
-              .averageValue(arrayOperationsService.findAverageValue(customArray))
+              .sum(arrayCalculationsService.sum(customArray))
+              .averageValue(arrayCalculationsService.calculateAverageValue(customArray))
               .build();
     } catch (CustomArrayException e) {
       log.error("Error during warehouse updating");
