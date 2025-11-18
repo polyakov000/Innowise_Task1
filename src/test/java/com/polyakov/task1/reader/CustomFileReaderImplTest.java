@@ -1,11 +1,7 @@
 package com.polyakov.task1.reader;
 
 import com.polyakov.task1.exception.CustomFileException;
-import com.polyakov.task1.parser.FileDataParser;
-import com.polyakov.task1.parser.impl.FileDataParserImpl;
 import com.polyakov.task1.reader.impl.CustomFileReaderImpl;
-import com.polyakov.task1.validator.DataValidator;
-import com.polyakov.task1.validator.impl.DataValidatorImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
@@ -19,7 +15,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CustomFileReaderImplTest {
-  static final String relPath = "src/main/java/com/polyakov/task1/data/input.txt";
+  static final String relPath = "data/input.txt";
   static final CustomFileReader customFileReader = new CustomFileReaderImpl();
   static final Logger log = LogManager.getLogger();
 
