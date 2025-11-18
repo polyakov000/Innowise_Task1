@@ -1,6 +1,6 @@
 package com.polyakov.task1.parser.impl;
 
-import com.polyakov.task1.parser.FileDataParser;
+import com.polyakov.task1.parser.StringParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FileDataParserImpl implements FileDataParser {
+public class StringParserImpl implements StringParser {
   static final Logger log = LogManager.getLogger();
   @Override
   public List<String> parse(List<String> fileData) {
