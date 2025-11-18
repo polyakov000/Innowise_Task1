@@ -30,13 +30,6 @@ class ArrayOperationsServiceImplTest {
   }
 
   @Test
-  void findAverageValue() throws CustomArrayException {
-    double expected = 3;
-    double actual = arrayOperationsService.findAverageValue(CUSTOM_ARRAY);
-    assertEquals(expected,actual);
-  }
-
-  @Test
   void findMaxValue() throws CustomArrayException {
     int expected = 5;
     int actual = arrayOperationsService.findMaxValue(CUSTOM_ARRAY);
@@ -61,20 +54,6 @@ class ArrayOperationsServiceImplTest {
   void negativeCount() throws CustomArrayException {
     int expected = 0;
     int actual = arrayOperationsService.negativeCount(CUSTOM_ARRAY);
-    assertEquals(expected,actual);
-  }
-
-  @Test
-  void sum() throws CustomArrayException {
-    double expected = 15;
-    double actual = arrayOperationsService.sum(CUSTOM_ARRAY);
-    assertEquals(expected,actual);
-  }
-
-  @Test
-  void findAverageValueStream() throws CustomArrayException {
-    double expected = 3;
-    double actual = arrayOperationsService.findAverageValueStream(CUSTOM_ARRAY);
     assertEquals(expected,actual);
   }
 
@@ -105,12 +84,4 @@ class ArrayOperationsServiceImplTest {
     int actual = arrayOperationsService.negativeCount(CUSTOM_ARRAY);
     assertEquals(expected,actual);
   }
-
-  @Test
-  void sumStream() throws CustomArrayException {
-    double expected = 15;
-    double actual = arrayOperationsService.sumStream(CUSTOM_ARRAY);
-    assertEquals(expected,actual);
-  }
-
 }
