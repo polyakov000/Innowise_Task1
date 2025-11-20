@@ -1,33 +1,31 @@
 package com.polyakov.task1.entity;
 
+import com.polyakov.task1.observer.ArrayObservable;
 import com.polyakov.task1.observer.ArrayObserver;
 import com.polyakov.task1.observer.impl.ArrayObserverImpl;
 import com.polyakov.task1.repository.Repository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.Arrays;
-import java.util.Objects;
 
-public class CustomArray implements ArrayObserver {
+public class CustomArray implements ArrayObservable {
+    private static final Logger log = LogManager.getLogger();
     private long id;
     private int[] elements;
-    private static final Logger log = LogManager.getLogger();
-    private static final Repository repository = Repository.getInstance();
-    private ArrayObserver arrayObserver = new ArrayObserverImpl();
+    private ArrayObserver arrayObserver;
 
     public CustomArray(long id, int[] elements) {
         this.id = id;
         this.elements = elements.clone();
         log.info("array "+ this +" was created");
-        repository.addArray(this);
+        Repository.getInstance().add(this);
     }
 
     private CustomArray() {
     }
 
     public int[] getElements() {
-        return elements;
+        return elements.clone();
     }
 
     public int getLength() {
@@ -44,7 +42,7 @@ public class CustomArray implements ArrayObserver {
 
     public void setElements(int[] elements) {
         this.elements = elements.clone();
-        update(this);
+        notifyObservers();
     }
 
     @Override
@@ -57,7 +55,7 @@ public class CustomArray implements ArrayObserver {
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(id);
+        int result = Long.hashCode(id);
         result = 31 * result + Arrays.hashCode(elements);
         return result;
     }
@@ -71,12 +69,20 @@ public class CustomArray implements ArrayObserver {
                 .append(" }\n}").toString();
     }
 
-    public static Builder build(){
-        return new CustomArray().new Builder();
+    @Override
+    public void addObserver(ArrayObserver observer) {
+        if(observer != null){
+            this.arrayObserver = observer;
+        }
     }
 
     @Override
-    public void update(CustomArray customArray) {
+    public void removeObserver(ArrayObserver observer) {
+        this.arrayObserver =null;
+    }
+
+    @Override
+    public void notifyObservers() {
         arrayObserver.update(this);
     }
 
@@ -99,5 +105,8 @@ public class CustomArray implements ArrayObserver {
             return CustomArray.this;
         }
 
+    }
+    public static Builder newBuilder(){
+        return new CustomArray().new Builder();
     }
 }
