@@ -1,7 +1,7 @@
-package com.polyakov.task1.specification.impl;
+package com.polyakov.task1.repository.specification.impl;
 
 import com.polyakov.task1.entity.CustomArray;
-import com.polyakov.task1.specification.Specification;
+import com.polyakov.task1.repository.specification.Specification;
 
 public class ArrayLengthMoreThanSpecification implements Specification {
   int arrayLength;
