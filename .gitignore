@@ -12,8 +12,8 @@ target/
 *.iws
 *.iml
 *.ipr
-logs/
 src/test/java/com/polyakov/task1/myTest
+/logs/
 
 ### Eclipse ###
 .apt_generated
