@@ -1,6 +1,6 @@
 package com.polyakov.task1.validator;
 
-import com.polyakov.task1.validator.impl.DataValidatorImpl;
+import com.polyakov.task1.validator.impl.ArrayStringValidatorImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
@@ -10,8 +10,8 @@ import org.junit.jupiter.api.TestInfo;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DataValidatorImplTest {
-  static final DataValidator dataValidator = new DataValidatorImpl();
+class ArrayStringValidatorImplTest {
+  static final ArrayStringValidator arrayStringValidator = new ArrayStringValidatorImpl();
   static final Logger log = LogManager.getLogger();
 
   @BeforeEach
@@ -26,9 +26,9 @@ class DataValidatorImplTest {
 
   @Test
   void isValid() {
-    String token = "2e2";
+    String string = "2e2 1 2 4";
     boolean expected = false;
-    boolean actual = dataValidator.isValid(token);
+    boolean actual = arrayStringValidator.isValid(string);
     assertEquals(expected,actual);
   }
 }

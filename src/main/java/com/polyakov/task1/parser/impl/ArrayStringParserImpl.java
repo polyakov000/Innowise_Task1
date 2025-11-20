@@ -1,6 +1,6 @@
 package com.polyakov.task1.parser.impl;
 
-import com.polyakov.task1.parser.StringParser;
+import com.polyakov.task1.parser.ArrayStringParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -9,16 +9,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class StringParserImpl implements StringParser {
+public class ArrayStringParserImpl implements ArrayStringParser {
   static final Logger log = LogManager.getLogger();
+  static final String WHITESPACE_REGEX = "\\s+";
   @Override
-  public List<String> parse(List<String> fileData) {
-    List<String> tokens = new ArrayList<>();
-    for(String line : fileData){
-      String[] lineTokens = line.strip().split("\\s+");
-      tokens.addAll(Arrays.asList(lineTokens));
-    }
-    return tokens;
+  public int [] parse(String string) {
+    String[] stringTokens = string.strip().split(WHITESPACE_REGEX);
+    int[] array = Arrays.stream(stringTokens).mapToInt(Integer::parseInt).toArray();
+    return array;
   }
 
   @Override

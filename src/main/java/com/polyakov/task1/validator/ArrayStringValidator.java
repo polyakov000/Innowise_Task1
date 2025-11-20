@@ -1,8 +1,6 @@
 package com.polyakov.task1.validator;
 
-import java.util.List;
-
-public interface DataValidator {
+public interface ArrayStringValidator {
   boolean isValid(String string);
   boolean isValidStream(String string);
 }
