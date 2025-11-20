@@ -1,10 +1,14 @@
 package com.polyakov.task1.repository;
 
+import com.polyakov.task1.comparator.FirstElementComparator;
+import com.polyakov.task1.comparator.IdComparator;
+import com.polyakov.task1.comparator.LengthComparator;
+import com.polyakov.task1.comparator.SumComparator;
 import com.polyakov.task1.entity.CustomArray;
-import com.polyakov.task1.specification.Specification;
-import com.polyakov.task1.specification.impl.ArrayLengthMoreThanSpecification;
-import com.polyakov.task1.specification.impl.FirstArrayElementSpecification;
-import com.polyakov.task1.specification.impl.IdSpecification;
+import com.polyakov.task1.repository.specification.Specification;
+import com.polyakov.task1.repository.specification.impl.ArrayLengthMoreThanSpecification;
+import com.polyakov.task1.repository.specification.impl.FirstArrayElementSpecification;
+import com.polyakov.task1.repository.specification.impl.IdSpecification;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,9 +27,9 @@ class RepositoryTest {
 
   @BeforeEach
   void setUp() {
-    customArray1 = new CustomArray(1,new int[] {1});
-    customArray2 = new CustomArray(2,new int[] {1,2});
-    customArray3 = new CustomArray(3,new int[] {3,2,3});
+    customArray1 = new CustomArray(1,new int[] {325,35342,22,4});
+    customArray2 = new CustomArray(2,new int[] {22,44,3});
+    customArray3 = new CustomArray(3,new int[] {1});
     arrays.add(customArray1);
     arrays.add(customArray2);
     arrays.add(customArray3);
@@ -44,7 +48,7 @@ class RepositoryTest {
 
   @Test
   void removeArray() {
-    repository.removeArray(customArray1);
+    repository.remove(customArray1);
     List<CustomArray> expected = List.of(customArray2,customArray3);
     List<CustomArray> actual = repository.getRepositoryArrays();
     assertEquals(expected,actual);
@@ -80,6 +84,19 @@ class RepositoryTest {
             () -> assertEquals(expected1,actual1),
             () -> assertEquals(expected2,actual2),
             () -> assertEquals(expected3,actual3)
+    );
+  }
+  @Test
+  void sort(){
+    List<CustomArray> sortedById = repository.sort(new IdComparator());
+    List<CustomArray> sortedByFirstElement = repository.sort(new FirstElementComparator());
+    List<CustomArray> sortedBySum = repository.sort(new SumComparator());
+    List<CustomArray> sortedByLength = repository.sort(new LengthComparator());
+    assertAll(
+            ()-> assertEquals(customArray3,sortedByFirstElement.get(0)),
+            ()->  assertEquals(customArray3,sortedBySum.get(0)),
+            ()->  assertEquals(customArray3,sortedByLength.get(0)),
+            ()->  assertEquals(customArray1,sortedById.get(0))
     );
   }
 }

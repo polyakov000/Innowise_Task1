@@ -1,15 +1,15 @@
 package com.polyakov.task1.repository;
 
 import com.polyakov.task1.entity.CustomArray;
-import com.polyakov.task1.specification.Specification;
+import com.polyakov.task1.repository.specification.Specification;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Repository {
   private static Repository repository;
-  private static ArrayList<CustomArray> repositoryArrays = new ArrayList<>();
+  private List<CustomArray> repositoryArrays = new ArrayList<>();
   private Repository(){
   }
   public static Repository getInstance(){
@@ -18,19 +18,23 @@ public class Repository {
     }
     return repository;
   }
-  public void addArray(CustomArray customArray){
+  public void add(CustomArray customArray){
     repositoryArrays.add(customArray);
   }
-  public void removeArray(CustomArray customArray){
+  public void remove(CustomArray customArray){
     repositoryArrays.remove(customArray);
   }
   public void clearRepository(){
     repositoryArrays.clear();
   }
 
-  public ArrayList<CustomArray> getRepositoryArrays() {
+  public List<CustomArray> getRepositoryArrays() {
     return repositoryArrays;
   }
+
+  public List<CustomArray> sort(Comparator<? super CustomArray> comparator){
+    return repositoryArrays.stream().sorted(comparator).toList();
+  };
 
   public List<CustomArray> findBySpecification(Specification specification){
     List<CustomArray> foundArrays = new ArrayList<>();
