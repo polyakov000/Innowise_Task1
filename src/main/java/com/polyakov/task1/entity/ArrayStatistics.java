@@ -1,19 +1,19 @@
-package com.polyakov.task1.stats;
+package com.polyakov.task1.entity;
 
-public class ArrayStats {
+public class ArrayStatistics {
   private int min;
   private int max;
   private int sum;
   private double averageValue;
 
-  public ArrayStats(int min, int max, int sum, double averageValue) {
+  public ArrayStatistics(int min, int max, int sum, double averageValue) {
     this.min = min;
     this.max = max;
     this.sum = sum;
     this.averageValue = averageValue;
   }
 
-  private ArrayStats() {
+  private ArrayStatistics() {
   }
 
   public int getMin() {
@@ -41,8 +41,8 @@ public class ArrayStats {
     return stringBuilder.toString();
   }
 
-  public static Builder build() {
-    return new ArrayStats().new Builder();
+  public static Builder Builder() {
+    return new ArrayStatistics().new Builder();
   }
 
   public class Builder {
@@ -73,12 +73,12 @@ public class ArrayStats {
       return this;
     }
 
-    public ArrayStats build() {
-      ArrayStats.this.min = this.min;
-      ArrayStats.this.max = this.max;
-      ArrayStats.this.sum = this.sum;
-      ArrayStats.this.averageValue = this.averageValue;
-      return ArrayStats.this;
+    public ArrayStatistics build() {
+      ArrayStatistics.this.min = this.min;
+      ArrayStatistics.this.max = this.max;
+      ArrayStatistics.this.sum = this.sum;
+      ArrayStatistics.this.averageValue = this.averageValue;
+      return ArrayStatistics.this;
     }
   }
 }
