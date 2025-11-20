@@ -13,15 +13,13 @@ import org.junit.jupiter.api.TestInfo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ArrayOperationsServiceImplTest {
-
-  static final ArrayOperationsService arrayOperationsService = new ArrayOperationsServiceImpl();
-  static final CustomArray CUSTOM_ARRAY = new CustomArray(1,new int[]{1,2,3,4,5});
   static final Logger log = LogManager.getLogger();
-
-
+  static final ArrayOperationsService arrayOperationsService = new ArrayOperationsServiceImpl();
+  CustomArray customArray;
   @BeforeEach
   void setUp(TestInfo testInfo) {
     log.info("{} started", testInfo.getDisplayName());
+    customArray = new CustomArray(1,new int[]{1,2,3,4,5});
   }
 
   @AfterEach
@@ -32,56 +30,56 @@ class ArrayOperationsServiceImplTest {
   @Test
   void findMaxValue() throws CustomArrayException {
     int expected = 5;
-    int actual = arrayOperationsService.findMaxValue(CUSTOM_ARRAY);
+    int actual = arrayOperationsService.findMaxValue(customArray);
     assertEquals(expected,actual);
   }
 
   @Test
   void findMinValue() throws CustomArrayException {
     int expected = 1;
-    int actual = arrayOperationsService.findMinValue(CUSTOM_ARRAY);
+    int actual = arrayOperationsService.findMinValue(customArray);
     assertEquals(expected, actual);
   }
 
   @Test
   void positiveCount() throws CustomArrayException {
     int expected = 5;
-    int actual = arrayOperationsService.positiveCount(CUSTOM_ARRAY);
+    int actual = arrayOperationsService.positiveCount(customArray);
     assertEquals(expected,actual);
   }
 
   @Test
   void negativeCount() throws CustomArrayException {
     int expected = 0;
-    int actual = arrayOperationsService.negativeCount(CUSTOM_ARRAY);
+    int actual = arrayOperationsService.negativeCount(customArray);
     assertEquals(expected,actual);
   }
 
   @Test
   void findMaxValueStream() throws CustomArrayException {
     int expected = 5;
-    int actual = arrayOperationsService.findMaxValueStream(CUSTOM_ARRAY);
+    int actual = arrayOperationsService.findMaxValueStream(customArray);
     assertEquals(expected,actual);
   }
 
   @Test
   void findMinValueStream() throws CustomArrayException {
     int expected = 1;
-    int actual = arrayOperationsService.findMinValueStream(CUSTOM_ARRAY);
+    int actual = arrayOperationsService.findMinValueStream(customArray);
     assertEquals(expected, actual);
   }
 
   @Test
   void positiveCountStream() throws CustomArrayException {
     int expected = 5;
-    int actual = arrayOperationsService.positiveCountStream(CUSTOM_ARRAY);
+    int actual = arrayOperationsService.positiveCountStream(customArray);
     assertEquals(expected,actual);
   }
 
   @Test
   void negativeCountStream() throws CustomArrayException {
     int expected = 0;
-    int actual = arrayOperationsService.negativeCount(CUSTOM_ARRAY);
+    int actual = arrayOperationsService.negativeCount(customArray);
     assertEquals(expected,actual);
   }
 }

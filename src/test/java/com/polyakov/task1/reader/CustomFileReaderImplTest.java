@@ -15,9 +15,9 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CustomFileReaderImplTest {
+  static final Logger log = LogManager.getLogger();
   static final String relPath = "data/input.txt";
   static final CustomFileReader customFileReader = new CustomFileReaderImpl();
-  static final Logger log = LogManager.getLogger();
 
   @BeforeEach
   void setUp(TestInfo testInfo) {

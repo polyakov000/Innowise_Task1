@@ -13,13 +13,13 @@ import org.junit.jupiter.api.TestInfo;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class ReplaceElementsByConditionServiceImplTest {
-  static final ReplaceElementsByConditionService replaceElementsByConditionService = new ReplaceElementsByConditionServiceImpl();
-  static final CustomArray CUSTOM_ARRAY = new CustomArray(1,new int[]{-3,-2,0,4,5});
   static final Logger log = LogManager.getLogger();
-
+  static final ReplaceElementsByConditionService replaceElementsByConditionService = new ReplaceElementsByConditionServiceImpl();
+  CustomArray customArray;
   @BeforeEach
   void setUp(TestInfo testInfo) {
     log.info("{} started", testInfo.getDisplayName());
+    customArray = new CustomArray(1,new int[]{-3,-2,0,4,5});
   }
 
   @AfterEach
@@ -29,14 +29,14 @@ class ReplaceElementsByConditionServiceImplTest {
 
   @Test
   void replace() throws CustomArrayException {
-    CustomArray modifiedArray = replaceElementsByConditionService.replace(CUSTOM_ARRAY);
+    CustomArray modifiedArray = replaceElementsByConditionService.replace(customArray);
     int[] expected = {-1,-1,0,1,1};
     int[] actual = modifiedArray.getElements();
     assertArrayEquals(expected,actual);
   }
   @Test
   void replaceStream() throws CustomArrayException {
-    CustomArray modifiedArray = replaceElementsByConditionService.replaceStream(CUSTOM_ARRAY);
+    CustomArray modifiedArray = replaceElementsByConditionService.replaceStream(customArray);
     int[] expected = {-1,-1,0,1,1};
     int[] actual = modifiedArray.getElements();
     assertArrayEquals(expected,actual);

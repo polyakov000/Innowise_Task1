@@ -12,10 +12,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayCalculationsServiceImplTest {
   static final ArrayCalculationsService arrayCalculationsService = new ArrayCalculationsServiceImpl();
-  static final CustomArray CUSTOM_ARRAY = new CustomArray(1,new int[]{1,2,3,4,5});
+  CustomArray customArray;
 
   @BeforeEach
   void setUp() {
+    customArray = new CustomArray(1,new int[]{1,2,3,4,5});
   }
 
   @AfterEach
@@ -25,28 +26,28 @@ class ArrayCalculationsServiceImplTest {
   @Test
   void calculateAverageValue() throws CustomArrayException {
     double expected = 3;
-    double actual = arrayCalculationsService.calculateAverageValue(CUSTOM_ARRAY);
+    double actual = arrayCalculationsService.calculateAverageValue(customArray);
     assertEquals(expected,actual);
   }
 
   @Test
   void calculateAverageValueStream() throws CustomArrayException {
     double expected = 3;
-    double actual = arrayCalculationsService.calculateAverageValueStream(CUSTOM_ARRAY);
+    double actual = arrayCalculationsService.calculateAverageValueStream(customArray);
     assertEquals(expected,actual);
   }
 
   @Test
   void sum() throws CustomArrayException {
     double expected = 15;
-    double actual = arrayCalculationsService.sum(CUSTOM_ARRAY);
+    double actual = arrayCalculationsService.sum(customArray);
     assertEquals(expected,actual);
   }
 
   @Test
   void sumStream() throws CustomArrayException {
     double expected = 15;
-    double actual = arrayCalculationsService.sumStream(CUSTOM_ARRAY);
+    double actual = arrayCalculationsService.sumStream(customArray);
     assertEquals(expected,actual);
   }
 }

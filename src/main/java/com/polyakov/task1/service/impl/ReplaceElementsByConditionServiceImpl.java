@@ -2,6 +2,7 @@ package com.polyakov.task1.service.impl;
 
 import com.polyakov.task1.entity.CustomArray;
 import com.polyakov.task1.exception.CustomArrayException;
+import com.polyakov.task1.observer.ArrayObservable;
 import com.polyakov.task1.observer.ArrayObserver;
 import com.polyakov.task1.observer.impl.ArrayObserverImpl;
 import com.polyakov.task1.service.ReplaceElementsByConditionService;
@@ -10,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Arrays;
 
-public class ReplaceElementsByConditionServiceImpl implements ReplaceElementsByConditionService, ArrayObserver {
+public class ReplaceElementsByConditionServiceImpl implements ReplaceElementsByConditionService{
   static final Logger log = LogManager.getLogger();
   @Override
   public CustomArray replace(CustomArray customArray) throws CustomArrayException {
@@ -24,14 +25,13 @@ public class ReplaceElementsByConditionServiceImpl implements ReplaceElementsByC
         customArray.getElements()[i] = 1;
       }
     }
-    update(customArray);
     log.info("Array elements were replaced");
     return customArray;
   }
 
   @Override
   public CustomArray replaceStream(CustomArray customArray) throws CustomArrayException {
-    if(customArray == null || customArray.getLength() == 0){
+    if (customArray == null || customArray.getLength() == 0) {
       throw new CustomArrayException("Empty or not initialized array");
     }
     int[] replacedElements = Arrays.stream(customArray.getElements())
@@ -40,10 +40,5 @@ public class ReplaceElementsByConditionServiceImpl implements ReplaceElementsByC
     customArray.setElements(replacedElements);
     log.info("Array elements were replaced using StreamAPI");
     return customArray;
-  }
-  @Override
-  public void update(CustomArray customArray) {
-    ArrayObserver arrayObserver = new ArrayObserverImpl();
-    arrayObserver.update(customArray);
   }
 }

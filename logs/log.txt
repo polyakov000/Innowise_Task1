@@ -366,3 +366,121 @@ elements = { [1, 2, 3, 4, 5] }
 2025-11-18 19:13:53 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted using StreamAPI: 15
 2025-11-18 19:13:53 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted: 3.0
 2025-11-18 19:13:53 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted using StreamAPI: 3.0
+2025-11-19 18:24:02 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4, 5] }
+} was created
+2025-11-19 18:24:02 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 2
+elements = { [1, 2, 3] }
+} was created
+2025-11-19 18:24:02 [main] INFO  polyakov.task1.reader.impl.CustomFileReaderImpl- File successfully read
+2025-11-19 18:26:11 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4, 5] }
+} was created
+2025-11-19 18:26:11 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 2
+elements = { [1, 2, 3] }
+} was created
+2025-11-19 18:26:11 [main] INFO  polyakov.task1.reader.impl.CustomFileReaderImpl- File successfully read
+2025-11-19 19:39:45 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4, 5] }
+} was created
+2025-11-19 19:39:45 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 2
+elements = { [1, 2, 3] }
+} was created
+2025-11-19 19:40:18 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4, 5] }
+} was created
+2025-11-19 19:40:18 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 2
+elements = { [1, 2, 3] }
+} was created
+2025-11-20 10:26:02 [main] INFO  com.polyakov.task1.parser.ArrayStringParserImplTest- parse() started
+2025-11-20 10:26:03 [main] INFO  com.polyakov.task1.parser.ArrayStringParserImplTest- parse() ended
+2025-11-20 10:28:28 [main] INFO  com.polyakov.task1.parser.ArrayStringParserImplTest- parse() started
+2025-11-20 10:28:28 [main] INFO  com.polyakov.task1.parser.ArrayStringParserImplTest- parse() ended
+2025-11-20 10:29:17 [main] INFO  com.polyakov.task1.validator.ArrayStringValidatorImplTest- isValid() started
+2025-11-20 10:29:17 [main] INFO  com.polyakov.task1.validator.ArrayStringValidatorImplTest- isValid() ended
+2025-11-20 10:34:32 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1] }
+} was created
+2025-11-20 10:34:32 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 2
+elements = { [1, 2] }
+} was created
+2025-11-20 10:34:32 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 3
+elements = { [3, 2, 3] }
+} was created
+2025-11-20 10:35:10 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 4
+elements = { [1] }
+} was created
+2025-11-20 10:35:10 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 2
+elements = { [1, 2] }
+} was created
+2025-11-20 10:35:10 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 3
+elements = { [3, 2, 3] }
+} was created
+2025-11-20 10:42:21 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 4
+elements = { [1] }
+} was created
+2025-11-20 10:42:21 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 2
+elements = { [1, 2] }
+} was created
+2025-11-20 10:42:21 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 3
+elements = { [3, 2, 3] }
+} was created
+2025-11-20 10:42:21 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 3
+2025-11-20 10:42:21 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 1
+2025-11-20 10:42:21 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 8
+2025-11-20 10:42:21 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 3
+2025-11-20 10:44:06 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 4
+elements = { [1] }
+} was created
+2025-11-20 10:44:06 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 2
+elements = { [2, 2] }
+} was created
+2025-11-20 10:44:06 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 3
+elements = { [3, 2, 3] }
+} was created
+2025-11-20 10:44:06 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 4
+2025-11-20 10:44:06 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 1
+2025-11-20 10:44:06 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 8
+2025-11-20 10:44:06 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 4
+2025-11-20 10:45:43 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 4
+elements = { [1] }
+} was created
+2025-11-20 10:45:43 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 2
+elements = { [2, 2] }
+} was created
+2025-11-20 10:45:43 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 3
+elements = { [3, 2, 3] }
+} was created
+2025-11-20 10:45:44 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 4
+2025-11-20 10:45:44 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 1
+2025-11-20 10:45:44 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 8
+2025-11-20 10:45:44 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 4
+2025-11-20 10:49:25 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [325, 35342, 22, 4] }
+} was created
+2025-11-20 10:49:25 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 2
+elements = { [22, 44, 3] }
+} was created
+2025-11-20 10:49:25 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 3
+elements = { [1] }
+} was created
+2025-11-20 10:49:25 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 69
+2025-11-20 10:49:25 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 35693
+2025-11-20 10:49:25 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 1
+2025-11-20 10:49:25 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 69
+2025-11-20 14:09:31 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4, 5] }
+} was created
+2025-11-20 14:09:31 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 15
+2025-11-20 14:09:31 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4, 5] }
+} was created
+2025-11-20 14:09:31 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted using StreamAPI: 15
+2025-11-20 14:09:31 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4, 5] }
+} was created
+2025-11-20 14:09:31 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted: 3.0
+2025-11-20 14:09:31 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4, 5] }
+} was created
+2025-11-20 14:09:31 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted using StreamAPI: 3.0
