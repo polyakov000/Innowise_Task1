@@ -3,29 +3,22 @@ package com.polyakov.task1.service;
 import com.polyakov.task1.entity.CustomArray;
 import com.polyakov.task1.exception.CustomArrayException;
 import com.polyakov.task1.service.impl.ArrayOperationsServiceImpl;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInfo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ArrayOperationsServiceImplTest {
-  static final Logger log = LogManager.getLogger();
   static final ArrayOperationsService arrayOperationsService = new ArrayOperationsServiceImpl();
   CustomArray customArray;
   @BeforeEach
-  void setUp(TestInfo testInfo) {
-    log.info("{} started", testInfo.getDisplayName());
+  void setUp() {
     customArray = new CustomArray(1,new int[]{1,2,3,4,5});
   }
 
   @AfterEach
-  void tearDown(TestInfo testInfo) {
-    log.info("{} ended", testInfo.getDisplayName());
-  }
+  void tearDown() {}
 
   @Test
   void findMaxValue() throws CustomArrayException {

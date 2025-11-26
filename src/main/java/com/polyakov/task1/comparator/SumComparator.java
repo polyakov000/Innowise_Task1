@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.Comparator;
 
 public class SumComparator implements Comparator<CustomArray> {
-  private static final Logger log = LogManager.getLogger();
+  static final Logger log = LogManager.getLogger();
 
   @Override
   public int compare(CustomArray customArray1, CustomArray customArray2) {

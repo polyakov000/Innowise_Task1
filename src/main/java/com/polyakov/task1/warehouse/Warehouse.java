@@ -20,11 +20,6 @@ public class Warehouse {
   public void put(long id, ArrayStatistics arrayStatistics){
     arraysStatsMap.put(id, arrayStatistics);
   }
-
-  public void clearWarehouse(){
-    arraysStatsMap.clear();
-  }
-
   public static Map<Long, ArrayStatistics> getArraysStatsMap() {
     return arraysStatsMap;
   }

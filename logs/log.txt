@@ -484,3 +484,37 @@ elements = { [1, 2, 3, 4, 5] }
 elements = { [1, 2, 3, 4, 5] }
 } was created
 2025-11-20 14:09:31 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted using StreamAPI: 3.0
+2025-11-25 18:11:29 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4] }
+} was created
+2025-11-25 18:12:34 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4] }
+} was created
+2025-11-25 18:14:01 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4] }
+} was created
+2025-11-25 18:14:01 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Max array value was found: 1
+2025-11-25 18:14:01 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Min array value was found: 1
+2025-11-25 18:14:01 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 1
+2025-11-25 18:14:01 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted: 1.0
+2025-11-25 18:25:08 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4] }
+} was created
+2025-11-25 18:25:08 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Max array value was found: 1
+2025-11-25 18:25:08 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Min array value was found: 1
+2025-11-25 18:25:08 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 1
+2025-11-25 18:25:08 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted: 1.0
+2025-11-26 17:12:49 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4] }
+} was created
+2025-11-26 17:12:49 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Max array value was found: 1
+2025-11-26 17:12:49 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Min array value was found: 1
+2025-11-26 17:12:49 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 1
+2025-11-26 17:12:49 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted: 1.0
+2025-11-26 17:21:25 [main] INFO  com.polyakov.task1.entity.CustomArray- array CustomArray { id = 1
+elements = { [1, 2, 3, 4] }
+} was created
+2025-11-26 17:21:25 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Max array value was found: 1
+2025-11-26 17:21:25 [main] INFO  polyakov.task1.service.impl.ArrayOperationsServiceImpl- Min array value was found: 1
+2025-11-26 17:21:25 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Array elements sum was counted: 1
+2025-11-26 17:21:25 [main] INFO  polyakov.task1.service.impl.ArrayCalculationsServiceImpl- Average array value counted: 1.0

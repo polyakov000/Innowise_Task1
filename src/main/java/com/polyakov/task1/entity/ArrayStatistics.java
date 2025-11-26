@@ -1,10 +1,10 @@
 package com.polyakov.task1.entity;
 
 public class ArrayStatistics {
-  private int min;
-  private int max;
-  private int sum;
-  private double averageValue;
+  int min;
+  int max;
+  int sum;
+  double averageValue;
 
   public ArrayStatistics(int min, int max, int sum, double averageValue) {
     this.min = min;
@@ -39,6 +39,31 @@ public class ArrayStatistics {
             .append("sum: ").append(sum).append("\n")
             .append("averageValue: ").append(averageValue).append("\n");
     return stringBuilder.toString();
+  }
+
+  @Override
+  public boolean equals(Object object) {
+    if (this == object) return true;
+    if (object == null || getClass() != object.getClass()) return false;
+
+    ArrayStatistics that = (ArrayStatistics) object;
+
+    if (getMin() != that.getMin()) return false;
+    if (getMax() != that.getMax()) return false;
+    if (getSum() != that.getSum()) return false;
+    return Double.compare(getAverageValue(), that.getAverageValue()) == 0;
+  }
+
+  @Override
+  public int hashCode() {
+    int result;
+    long temp;
+    result = getMin();
+    result = 31 * result + getMax();
+    result = 31 * result + getSum();
+    temp = Double.doubleToLongBits(getAverageValue());
+    result = 31 * result + (int) (temp ^ (temp >>> 32));
+    return result;
   }
 
   public static Builder Builder() {

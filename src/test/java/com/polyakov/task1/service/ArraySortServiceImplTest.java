@@ -3,30 +3,23 @@ package com.polyakov.task1.service;
 import com.polyakov.task1.entity.CustomArray;
 import com.polyakov.task1.exception.CustomArrayException;
 import com.polyakov.task1.service.impl.ArraySortServiceImpl;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInfo;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 
 class ArraySortServiceImplTest {
-  static final Logger log = LogManager.getLogger();
   static final ArraySortService arraySortService = new ArraySortServiceImpl();
   CustomArray customArray;
   @BeforeEach
-  void setUp(TestInfo testInfo) {
-    log.info("{} started", testInfo.getDisplayName());
+  void setUp() {
     customArray = new CustomArray(1,new int[]{2,1,5,4,3});
   }
 
   @AfterEach
-  void tearDown(TestInfo testInfo) {
-    log.info("{} ended", testInfo.getDisplayName());
-  }
+  void tearDown() {}
 
   @Test
   void selectionSort() throws CustomArrayException {

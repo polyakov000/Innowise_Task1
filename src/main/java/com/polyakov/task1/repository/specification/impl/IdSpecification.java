@@ -4,7 +4,7 @@ import com.polyakov.task1.entity.CustomArray;
 import com.polyakov.task1.repository.specification.Specification;
 
 public class IdSpecification implements Specification {
-  private long id;
+  long id;
   public IdSpecification(long id){
     this.id = id;
   }

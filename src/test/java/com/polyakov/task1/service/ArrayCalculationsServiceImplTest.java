@@ -3,7 +3,6 @@ package com.polyakov.task1.service;
 import com.polyakov.task1.entity.CustomArray;
 import com.polyakov.task1.exception.CustomArrayException;
 import com.polyakov.task1.service.impl.ArrayCalculationsServiceImpl;
-import com.polyakov.task1.service.impl.ArrayOperationsServiceImpl;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

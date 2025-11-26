@@ -8,8 +8,8 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Repository {
-  private static Repository repository;
-  private List<CustomArray> repositoryArrays = new ArrayList<>();
+  static Repository repository;
+  List<CustomArray> repositoryArrays = new ArrayList<>();
   private Repository(){
   }
   public static Repository getInstance(){

@@ -2,17 +2,16 @@ package com.polyakov.task1.entity;
 
 import com.polyakov.task1.observer.ArrayObservable;
 import com.polyakov.task1.observer.ArrayObserver;
-import com.polyakov.task1.observer.impl.ArrayObserverImpl;
 import com.polyakov.task1.repository.Repository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.util.Arrays;
 
 public class CustomArray implements ArrayObservable {
-    private static final Logger log = LogManager.getLogger();
-    private long id;
-    private int[] elements;
-    private ArrayObserver arrayObserver;
+    static final Logger log = LogManager.getLogger();
+    long id;
+    int[] elements;
+    ArrayObserver arrayObserver;
 
     public CustomArray(long id, int[] elements) {
         this.id = id;
@@ -49,14 +48,17 @@ public class CustomArray implements ArrayObservable {
     public boolean equals(Object object) {
         if (this == object) return true;
         if (object == null || getClass() != object.getClass()) return false;
-        CustomArray customArray = (CustomArray) object;
-        return id == customArray.id && Arrays.equals(elements, customArray.elements);
+
+        CustomArray that = (CustomArray) object;
+
+        if (getId() != that.getId()) return false;
+      return Arrays.equals(getElements(), that.getElements());
     }
 
     @Override
     public int hashCode() {
-        int result = Long.hashCode(id);
-        result = 31 * result + Arrays.hashCode(elements);
+        int result = (int) (getId() ^ (getId() >>> 32));
+        result = 31 * result + Arrays.hashCode(getElements());
         return result;
     }
 
@@ -78,7 +80,7 @@ public class CustomArray implements ArrayObservable {
 
     @Override
     public void removeObserver(ArrayObserver observer) {
-        this.arrayObserver =null;
+        this.arrayObserver = null;
     }
 
     @Override

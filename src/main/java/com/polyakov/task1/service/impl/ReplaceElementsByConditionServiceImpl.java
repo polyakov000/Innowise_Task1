@@ -2,9 +2,6 @@ package com.polyakov.task1.service.impl;
 
 import com.polyakov.task1.entity.CustomArray;
 import com.polyakov.task1.exception.CustomArrayException;
-import com.polyakov.task1.observer.ArrayObservable;
-import com.polyakov.task1.observer.ArrayObserver;
-import com.polyakov.task1.observer.impl.ArrayObserverImpl;
 import com.polyakov.task1.service.ReplaceElementsByConditionService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

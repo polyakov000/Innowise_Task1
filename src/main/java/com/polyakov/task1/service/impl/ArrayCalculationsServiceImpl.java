@@ -7,7 +7,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Arrays;
-import java.util.Optional;
 
 public class ArrayCalculationsServiceImpl implements ArrayCalculationsService {
   static final Logger log = LogManager.getLogger();
