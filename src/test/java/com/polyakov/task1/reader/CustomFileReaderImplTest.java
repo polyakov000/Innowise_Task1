@@ -23,7 +23,7 @@ class CustomFileReaderImplTest {
 
   @Test
   void readFile() throws CustomFileException {
-    List<String> expected = Arrays.asList("1 2 3 4","22 3e3 44","","e 2 3 4","e1 2 3 4");
+    List<String> expected = Arrays.asList("1 2 3 4","22 33 44","1 2 3 4","22 33 44","","e 2 3 4","e1 2 3 4");
     List<String> actual = customFileReader.readFile(relPath);
     assertEquals(expected,actual);
   }

@@ -9,9 +9,4 @@ public class ArrayStringValidatorImpl implements ArrayStringValidator {
   public boolean isValid(String string) {
       return STRING_PATTERN.matcher(string).matches();
   }
-
-  @Override
-  public boolean isValidStream(String string) {
-    return false;
-  }
 }
